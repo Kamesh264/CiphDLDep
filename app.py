@@ -56,8 +56,8 @@ app = Flask(__name__)
 
 app=Flask(__name__, template_folder='./templates', static_folder='./static')
 
-model_dl = pickle.load(open('model.pkl','rb'))
-
+# model_dl = pickle.load(open('model.pkl','rb'))
+model_dl = tf.keras.models.load_model('modell.h5')
 
 
 
